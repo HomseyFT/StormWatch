@@ -1,0 +1,25 @@
+[general]
+units = "imperial"          # "imperial" or "metric"
+alert_radius_miles = 50.0   # Notify if storm polygon within this distance
+
+[location]
+# Leave lat/lon as 0.0 to use auto-detection (GPS → IP fallback)
+lat = 0.0
+lon = 0.0
+label = ""                  # e.g. "Poughkeepsie, NY" — shown in UI header
+
+[refresh]
+alert_poll_seconds = 20
+conditions_poll_seconds = 60
+
+[notifications]
+sound = true                # Terminal bell on new alert
+visual_flash = true         # Flash alerts tab on new alert
+
+[cache]
+alerts_ttl_seconds = 60
+conditions_ttl_seconds = 120
+indicators_ttl_seconds = 120
+forecast_ttl_seconds = 300
+staleness_amber_minutes = 5
+staleness_red_minutes = 15

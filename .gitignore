@@ -1,0 +1,83 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+pythonenv*
+
+# Virtual environment
+.venv/
+venv/
+.env/
+.virtualenv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.directory
+
+# Project specific
+.stormwatch.log
+stormwatch.log
+*.log
+cache/*.db
+cache/*.db-journal
+.cache/
+*.db
+*.db-journal
+
+# Config files with sensitive data (if user adds API keys later)
+config.local.toml
+.secrets/
+*.key
+*.pem
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# Distribution
+dist/
+build/
+*.egg-info/
+*.egg
+wheelhouse/
+
+# Systemd service files (user-specific)
+*.service
+!stormwatch.service  # Keep the template
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+
+# OS generated
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# GPS data (if any)
+*.gps
+*.nmea
+
+# SQLite temporary files
+*.sqlite
+*.sqlite3
+*.sqlite-journal
