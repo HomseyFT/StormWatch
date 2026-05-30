@@ -152,7 +152,7 @@ class Scheduler:
                 
                 # Store additional severe info in cache
                 try:
-                    await self._cache.set(DataKey("nws_severe"), {
+                    await self._cache.set(DataKey.NWS_SEVERE, {
                         "risk_level": nws_severe.risk_level,
                         "hail_risk": nws_severe.hail_risk,
                         "tornado_risk": nws_severe.tornado_risk,
