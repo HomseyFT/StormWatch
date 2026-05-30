@@ -175,3 +175,13 @@ class CacheStore:
         else:
             await db.execute("DELETE FROM cache")
         await db.commit()
+# In the DataKey class, add this line:
+# After the existing keys, add:
+
+class DataKey(str, Enum):
+    ALERTS = "alerts"
+    CONDITIONS = "conditions"
+    INDICATORS = "indicators"
+    FORECAST = "forecast"
+    LOCATION = "location"
+    NWS_SEVERE = "nws_severe"  # Add this line
