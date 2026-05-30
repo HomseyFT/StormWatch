@@ -53,7 +53,7 @@ class ForecastPane(Widget):
     def _update_display(self) -> None:
         try:
             content = self.query_one("#forecast-content", Static)
-        except:
+        except Exception:
             return
 
         if self.data is None:

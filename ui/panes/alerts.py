@@ -97,7 +97,7 @@ class AlertsPane(Widget):
         """Update the display with current data."""
         try:
             content = self.query_one("#alerts-content", Static)
-        except:
+        except Exception:
             # Not mounted yet
             return
 
